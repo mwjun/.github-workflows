@@ -1,0 +1,95 @@
+Last login: Mon Jul 10 16:43:16 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Matthews-MacBook-Pro-8:~ matthew$ micro
+-bash: micro: command not found
+Matthews-MacBook-Pro-8:~ matthew$ ls
+Desktop		Downloads	Movies		Pictures	cpsc386sum
+Documents	Library		Music		Public
+Matthews-MacBook-Pro-8:~ matthew$ cd cpsc386sum
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ;s
+-bash: syntax error near unexpected token `;'
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls
+cpsc-386-00-hello-mwjun	euler1.py
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ micro
+-bash: micro: command not found
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ nano
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls
+cpsc-386-00-hello-mwjun	euler1.py		hello.html
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls
+cpsc-386-00-hello-mwjun	euler1.py		hello.html
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ git clone https://github.com/mwjun/simple-html-example.git
+
+Cloning into 'simple-html-example'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ 
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ git add hello.html
+fatal: not a git repository (or any of the parent directories): .git
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls
+cpsc-386-00-hello-mwjun	hello.html
+euler1.py		simple-html-example
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ git add hello.html
+fatal: not a git repository (or any of the parent directories): .git
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls -l
+total 16
+drwxr-xr-x  8 matthew  staff  256 Jun 10 18:56 cpsc-386-00-hello-mwjun
+-rwxr--r--@ 1 matthew  staff  436 Jun 12 14:38 euler1.py
+-rw-r--r--  1 matthew  staff   12 Jul 20 19:01 hello.html
+drwxr-xr-x  4 matthew  staff  128 Jul 24 20:40 simple-html-example
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ chmod /*
+chmod: Invalid file mode: /Applications
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ chmod *
+chmod: Invalid file mode: cpsc-386-00-hello-mwjun
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ chmod +x *.html
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls -l
+total 16
+drwxr-xr-x  8 matthew  staff  256 Jun 10 18:56 cpsc-386-00-hello-mwjun
+-rwxr--r--@ 1 matthew  staff  436 Jun 12 14:38 euler1.py
+-rwxr-xr-x  1 matthew  staff   12 Jul 20 19:01 hello.html
+drwxr-xr-x  4 matthew  staff  128 Jul 24 20:40 simple-html-example
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ git clone https://github.com/mwjun/simple-html-example.git
+fatal: destination path 'simple-html-example' already exists and is not an empty directory.
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls
+cpsc-386-00-hello-mwjun	hello.html
+euler1.py		simple-html-example
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ mv hello.html /home/simple-html-example
+mv: rename hello.html to /home/simple-html-example: Operation not supported
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ ls
+cpsc-386-00-hello-mwjun	hello.html
+euler1.py		simple-html-example
+Matthews-MacBook-Pro-8:cpsc386sum matthew$ cd simple-html-example/
+Matthews-MacBook-Pro-8:simple-html-example matthew$ ls
+README.md
+Matthews-MacBook-Pro-8:simple-html-example matthew$ micro hello.html
+-bash: micro: command not found
+Matthews-MacBook-Pro-8:simple-html-example matthew$ nano 
+
+  UW PICO 5.09                       New Buffer                       Modified  
+
+hello world
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
